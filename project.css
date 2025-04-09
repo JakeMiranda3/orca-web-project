@@ -191,6 +191,10 @@ input, textarea { margin-top: 10px;  /* Sets top margin to 10px */
 /* Handles submit button styling */
 input[type="submit"] { margin-left: 110px; /* Sets left margin to 110px */
  }
+summary {
+	font-weight: bold;
+	font-size: 1.3em;
+}
 
 /* Mobile-first modifications */
 @media screen and (max-width: 940px) {
