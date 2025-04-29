@@ -6,9 +6,27 @@
 <!-- Settings for mobile display -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Description of web page -->
-<meta name="description" content="Get in touch with Jake Miranda for questions, comments, or suggestions about orca conservation and preservation efforts."> 
+<meta name="description" content="Get in touch with Jake Miranda for questions, comments, or suggestions about orca conservation and preservation efforts.">
 <!-- Links to external CSS file -->
 <link href="project.css" rel="stylesheet">
+<script>
+function validateForm() {
+if (document.forms[0].myName.value == "" ) {
+    alert("Name field cannot be empty.");
+    return false;
+} // end if
+if (document.forms[0].myEmail.value == "") {
+    alert("Email field cannot be empty.");
+    return false;
+} // end if
+if (document.forms[0].myComments.value == "") {
+    alert("Comment field cannot be empty.");
+    return false;
+}
+alert("Form is valid.");
+return true;
+} // end function validateForm
+</script>
 </head>
 <body>
 
@@ -47,29 +65,29 @@
 </table>
 
 <!-- Contact form for user submission -->
-<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+<form method="post" action="https://webdevbasics.net/scripts/demo.php"
+	onsubmit="return validateForm();">
   <fieldset><legend>Suggestions or Comments</legend> <!-- Form section title -->
    <!-- Name input field -->
    <label for="myName">Name:</label>
-   <input type="text" name="myName" id="myName" required placeholder="your first and last name">
+   <input type="text" name="myName" id="myName" placeholder="your first and last name">
    <!-- Email input field -->
    <label for="myEmail">E-mail:</label>
-   <input type="email" name="myEmail" id="myEmail" required placeholder="Email with @ and domain">
+   <input type="email" name="myEmail" id="myEmail" placeholder="Email with @ and domain">
    <!-- Comments textarea -->
    <label for="myComments">Comments:</label>
-   <textarea name="myComments" id="myComments" rows="4" cols="30" required></textarea>
+   <textarea name="myComments" id="myComments" rows="4" cols="30" ></textarea>
    <input type="submit" value="Submit">
 </fieldset>
 </form>
-
-
-
 </main>
-
-
 <!-- Footer section with copyright and date -->
 <footer>
 Jake Miranda &copy; 2025
+<div> 
+<script> document.write("This page was last modified on: " + document.lastModified);
+</script>
+</div>
 </footer> 
 </div>
 </body>
