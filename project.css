@@ -116,10 +116,12 @@ footer {
 	margin-right: 120px;
 }
 
+	
+
 .floatleft { 
   	float:left;
 	padding-right: 2em;
-  	padding-bottom: 2em;
+  	padding-bottom: 5em;
 }
 
 table {
