@@ -258,7 +258,7 @@ summary {
 /* Additional mobile optimization */
 @media screen and (max-width: 600px) {
     header {
-        font-size: 120%;
+        font-size: 85%;
         padding: 10px 5px;
     }
     
@@ -292,12 +292,13 @@ summary {
         margin-left: 0;
     }
 .header-logo {
-    height: 95px; /* Even smaller for tiny screens */
+    height: 40px; /* Even smaller for tiny screens */
   }
   
   .headercontainer h1 {
     font-size: 110%;
   }
 
-
 }
+
+
